@@ -4,214 +4,285 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>سياسة الخصوصية — WASIL</title>
-<meta name="description" content="سياسة الخصوصية الرسمية لتطبيق WASIL">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --navy:#0D1F6E;
-    --navy-deep:#0A1856;
-    --blue:#1677FF;
-    --gold:#A8843C;
-    --stone:#F5F1E8;
-    --card-border:#EDE7D9;
-    --muted:#6B7280;
-    --text:#1E293B;
+  :root {
+    --stone: #F5F1E8;
+    --navy: #0D1F6E;
+    --blue: #1677FF;
+    --gold: #A8843C;
+    --gold-soft: #F3EAD3;
+    --card-border: #EDE7D9;
+    --muted: #6B7280;
+    --text: #1E293B;
   }
-  *{box-sizing:border-box;}
-  body{
-    margin:0;
-    background:var(--stone);
-    font-family:'Cairo',sans-serif;
-    color:var(--text);
-    line-height:1.9;
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--stone);
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    color: var(--text);
+    line-height: 1.8;
   }
-  header{
-    background:linear-gradient(135deg,#1A3FB5,var(--navy) 70%);
-    padding:56px 20px 72px;
-    text-align:center;
-    position:relative;
-    overflow:hidden;
+
+  header {
+    background: linear-gradient(135deg, var(--blue), var(--navy));
+    padding: 48px 24px 40px;
+    text-align: center;
+    color: white;
   }
-  header::before{
-    content:"";
-    position:absolute;
-    top:-70px; right:-60px;
-    width:220px; height:220px;
-    border-radius:50%;
-    background:radial-gradient(circle at center, rgba(255,255,255,.14), rgba(255,255,255,0) 70%);
+
+  .logo-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background: white;
+    color: var(--navy);
+    border-radius: 16px;
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 16px;
   }
-  .logo-badge{
-    width:64px;height:64px;
-    margin:0 auto 18px;
-    border-radius:50%;
-    background:rgba(255,255,255,.12);
-    border:1.5px solid rgba(255,255,255,.22);
-    display:flex;align-items:center;justify-content:center;
-    font-size:28px;color:#fff;font-weight:900;
+
+  header h1 {
+    margin: 0 0 8px;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
   }
-  header h1{
-    color:#fff;
-    font-size:26px;
-    font-weight:900;
-    margin:0 0 8px;
-    letter-spacing:.3px;
+
+  header p {
+    margin: 0;
+    color: rgba(255,255,255,0.75);
+    font-size: 14px;
   }
-  header p{
-    color:rgba(255,255,255,.78);
-    margin:0;
-    font-size:14px;
+
+  main {
+    max-width: 760px;
+    margin: -20px auto 0;
+    padding: 0 20px 60px;
   }
-  main{
-    max-width:760px;
-    margin:-40px auto 60px;
-    padding:0 20px;
+
+  .card {
+    background: white;
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    padding: 32px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 16px rgba(13,31,110,0.04);
   }
-  .updated-pill{
-    display:inline-block;
-    background:#fff;
-    border:1px solid var(--card-border);
-    color:var(--muted);
-    font-size:12px;
-    font-weight:700;
-    padding:6px 16px;
-    border-radius:20px;
-    margin-bottom:24px;
-    box-shadow:0 4px 14px rgba(13,31,110,.06);
+
+  .updated-badge {
+    display: inline-block;
+    background: var(--gold-soft);
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 24px;
   }
-  .card{
-    background:#fff;
-    border:1px solid var(--card-border);
-    border-radius:18px;
-    padding:26px 24px;
-    margin-bottom:18px;
-    box-shadow:0 4px 16px rgba(13,31,110,.04);
+
+  h2 {
+    color: var(--navy);
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
-  .card h2{
-    font-size:16px;
-    font-weight:800;
-    color:var(--navy);
-    margin:0 0 12px;
-    display:flex;
-    align-items:center;
-    gap:10px;
+
+  h2 .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: var(--navy);
+    color: white;
+    border-radius: 8px;
+    font-size: 13px;
+    flex-shrink: 0;
   }
-  .card h2 .num{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    width:26px;height:26px;
-    border-radius:8px;
-    background:rgba(22,119,255,.1);
-    color:var(--blue);
-    font-size:12px;
-    font-weight:800;
-    flex-shrink:0;
+
+  p, li {
+    font-size: 14px;
+    color: var(--text);
   }
-  .card p{
-    font-size:14px;
-    color:#475569;
-    margin:0;
-    white-space:pre-line;
+
+  ul {
+    margin: 8px 0;
+    padding-right: 20px;
   }
-  .note{
-    background:rgba(168,132,60,.07);
-    border:1px solid rgba(168,132,60,.22);
+
+  li { margin-bottom: 6px; }
+
+  .section + .section {
+    margin-top: 28px;
+    padding-top: 28px;
+    border-top: 1px solid var(--card-border);
   }
-  .note h2 .num{
-    background:rgba(168,132,60,.14);
-    color:var(--gold);
+
+  .note {
+    background: var(--stone);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 10px;
   }
-  .contact-box{
-    background:rgba(22,119,255,.06);
-    border-radius:14px;
-    padding:16px 18px;
-    display:flex;
-    gap:10px;
-    align-items:flex-start;
-    font-size:13px;
-    color:var(--blue);
-    margin-top:8px;
+
+  .contact-card {
+    background: var(--navy);
+    color: white;
+    border-radius: 20px;
+    padding: 28px 32px;
+    text-align: center;
   }
-  footer{
-    text-align:center;
-    padding:0 20px 50px;
-    color:var(--muted);
-    font-size:12px;
+
+  .contact-card h2 {
+    color: white;
+    justify-content: center;
   }
-  footer strong{color:var(--navy);}
-  @media (max-width:480px){
-    header{padding:44px 16px 60px;}
-    header h1{font-size:22px;}
-    .card{padding:20px 18px;}
+
+  .contact-card a {
+    color: white;
+    font-weight: 700;
+  }
+
+  footer {
+    text-align: center;
+    padding: 24px;
+    color: var(--muted);
+    font-size: 12px;
   }
 </style>
 </head>
 <body>
 
 <header>
-  <div class="logo-badge">W</div>
+  <div class="logo-mark">W</div>
   <h1>سياسة الخصوصية</h1>
-  <p>تطبيق WASIL — جميع خدماتك في منصة واحدة</p>
+  <p>تطبيق WASIL — منصة خدمات ذكية في الأردن</p>
 </header>
 
 <main>
-  <span class="updated-pill">آخر تحديث: يوليو 2026</span>
-
   <div class="card">
-    <h2><span class="num">1</span>مقدّمة</h2>
-    <p>نحن في WASIL نأخذ خصوصيتك على محمل الجد. توضح هذه السياسة ما هي البيانات التي نجمعها عند استخدامك للتطبيق، كيف نستخدمها، ومع من قد نشاركها. باستخدامك للتطبيق فإنك توافق على الممارسات الموضحة هنا.</p>
-  </div>
+    <span class="updated-badge">آخر تحديث: أغسطس 2026</span>
 
-  <div class="card">
-    <h2><span class="num">2</span>البيانات التي نجمعها</h2>
-    <p>نجمع فقط البيانات الضرورية لتشغيل الخدمة: بيانات الحساب (الاسم، رقم الهاتف، البريد الإلكتروني، المدينة والمنطقة)؛ بيانات مقدمي الخدمة (التخصص، نبذة تعريفية، الخدمات وأسعارها، أوقات العمل، ومناطق التغطية)؛ وثائق التوثيق لمقدمي الخدمة فقط (صورة شخصية، صورة الهوية، شهادات مهنية أو رقم نقابة حسب المهنة) وتُستخدم حصراً للتحقق من الهوية والمؤهلات؛ بيانات الاستخدام (التقييمات، البلاغات، تذاكر الدعم الفني)؛ بيانات تأكيد التحويلات المالية عند الاشتراك (اسم المُحوِّل ورقم سند التحويل) وتُستخدم حصراً لمراجعة طلب الاشتراك وتفعيله يدوياً؛ ومعرّف الجهاز للإشعارات (FCM Token).
-
-ملاحظة مهمة: لا يخزّن التطبيق سجلّ محادثاتك مع مقدمي الخدمة. التواصل يتم مباشرة عبر مكالمة هاتفية أو واتساب خارج التطبيق، ولا نطّلع على محتوى تلك المحادثات ولا نحتفظ بها.</p>
-  </div>
-
-  <div class="card">
-    <h2><span class="num">3</span>كيف نستخدم بياناتك</h2>
-    <p>نستخدم بياناتك لعرض ملفك الشخصي أو ملف مقدم الخدمة ضمن نتائج البحث، تمكينك من التواصل المباشر مع مقدمي الخدمة، التحقق من هوية ومؤهلات مقدمي الخدمة (التوثيق)، مراجعة طلبات الاشتراك وتفعيلها، معالجة التقييمات والبلاغات وتذاكر الدعم الفني، وإرسال إشعارات متعلقة باشتراكك أو نشاطك على المنصة إن فعّلت هذه الميزة.</p>
-  </div>
-
-  <div class="card">
-    <h2><span class="num">4</span>أين تُخزَّن بياناتك</h2>
-    <p>تُخزَّن بيانات التطبيق باستخدام خدمات Firebase التابعة لشركة Google (قاعدة بيانات Firestore وخدمة المصادقة Authentication). تخضع هذه الخدمات لمعايير أمان Google العالمية، ولا يمكن الوصول إلى بياناتك الشخصية إلا من خلال قواعد صلاحيات صارمة تسمح لك أنت فقط بتعديل بياناتك الخاصة.</p>
-  </div>
-
-  <div class="card">
-    <h2><span class="num">5</span>مشاركة البيانات مع أطراف أخرى</h2>
-    <p>لا نبيع بياناتك الشخصية لأي طرف ثالث. تظهر بيانات ملفك للمستخدمين الآخرين فقط في هذه الحالات: الاسم والصورة الشخصية والتخصص والخدمات تظهر علناً لملفات مقدمي الخدمة فقط لتمكين العملاء من التواصل معهم؛ رقم الهاتف/واتساب الخاص بمقدم الخدمة يظهر لمن يزور ملفه بهدف طلب خدمة؛ ولا تُعرض بيانات العملاء (غير مقدمي الخدمة) لأي مستخدم آخر إطلاقاً. بيانات تأكيد التحويلات المالية (اسم المُحوِّل ورقم السند) يطّلع عليها فريق إدارة المنصة حصراً لغرض مراجعة طلب الاشتراك، ولا تُشارك مع أي طرف آخر.</p>
-  </div>
-
-  <div class="card note">
-    <h2><span class="num">6</span>المدفوعات</h2>
-    <p>يعتمد تفعيل اشتراكات مقدمي الخدمة حالياً على التحويل المباشر (عبر خدمة CliQ، تحويل بنكي، أو محفظة إلكترونية) خارج التطبيق، تليه مراجعة يدوية من فريق WASIL لتأكيد التحويل وتفعيل الحساب. لا يعالج التطبيق حالياً أي بيانات بطاقات ائتمان، ولا نطّلع على تفاصيل حسابك المصرفي أو المحفظة الإلكترونية بأي شكل سوى ما تُدخله أنت طواعية (اسم المُحوِّل ورقم سند التحويل) للتحقق من إتمام العملية. سيتم تحديث هذه السياسة فور تفعيل بوابة دفع إلكترونية آلية مستقبلاً.</p>
-  </div>
-
-  <div class="card">
-    <h2><span class="num">7</span>حقوقك</h2>
-    <p>يمكنك تعديل بيانات ملفك الشخصي أو ملف مقدم الخدمة في أي وقت من داخل التطبيق. يمكنك حذف حسابك نهائياً من شاشة الإعدادات، مما يؤدي لحذف بياناتك من قواعد البيانات. يمكنك أيضاً التواصل معنا في أي وقت للاستفسار عن بياناتك المخزّنة أو طلب حذفها يدوياً.</p>
-  </div>
-
-  <div class="card">
-    <h2><span class="num">8</span>خصوصية القُصّر</h2>
-    <p>لا يُسمح باستخدام WASIL لمن هم دون سن 18 عاماً. لا نجمع عن قصد أي بيانات من قُصّر، وفي حال علمنا بذلك سنقوم بحذف الحساب وبياناته فوراً.</p>
-  </div>
-
-  <div class="card">
-    <h2><span class="num">9</span>التغييرات على هذه السياسة</h2>
-    <p>قد نحدّث هذه السياسة من وقت لآخر لتعكس تغييرات في خدماتنا. سيظهر تاريخ آخر تحديث أعلى هذه الصفحة، وننصحك بمراجعتها بشكل دوري.</p>
-    <div class="contact-box">
-      <span>💬</span>
-      <span>لأي استفسار حول خصوصيتك أو بياناتك، يمكنك التواصل معنا عبر "الدعم الفني" داخل التطبيق، أو عبر البريد الإلكتروني الموضح في صفحة التطبيق على المتجر.</span>
+    <div class="section">
+      <h2><span class="num">1</span> مقدمة</h2>
+      <p>
+        نحن في WASIL نأخذ خصوصيتك على محمل الجد. توضح هذه السياسة ما هي البيانات التي نجمعها عند استخدامك للتطبيق،
+        كيف نستخدمها، ومع من قد نشاركها. باستخدامك للتطبيق فإنك توافق على الممارسات الموضحة هنا.
+      </p>
     </div>
+
+    <div class="section">
+      <h2><span class="num">2</span> البيانات التي نجمعها</h2>
+      <p>نجمع فقط البيانات الضرورية لتشغيل الخدمة، وتشمل:</p>
+      <ul>
+        <li><strong>بيانات الحساب:</strong> الاسم، رقم الهاتف، البريد الإلكتروني، المدينة والمنطقة.</li>
+        <li><strong>بيانات مقدمي الخدمة:</strong> التخصص المهني، نبذة تعريفية، الخدمات المقدَّمة وأسعارها، أوقات العمل، ومناطق التغطية.</li>
+        <li><strong>وثائق التوثيق (لمقدمي الخدمة فقط):</strong> صورة شخصية، صورة الهوية، وشهادات مهنية أو رقم نقابة حسب طبيعة المهنة — تُستخدم حصراً للتحقق من الهوية والمؤهلات المهنية.</li>
+        <li><strong>بيانات الدفع اليدوي:</strong> عند الاشتراك أو شراء إعلان مدفوع (خدمات سريعة أو ظهور مميز)، نجمع اسم المُحوِّل ورقم/مرجع سند التحويل والمبلغ المُدخَل من المستخدم، لغرض مراجعة العملية يدوياً واعتمادها فقط — لا نجمع أو نخزّن أي بيانات بطاقة ائتمان.</li>
+        <li><strong>بيانات التعليقات والبلاغات:</strong> نص التعليق (إيجابي/سلبي) الذي يكتبه المستخدم عن طرف آخر، أي رد علني عليه، وأي بلاغ يقدّمه مستخدم عن محتوى مخالف.</li>
+        <li><strong>بيانات الإعلانات الترويجية:</strong> عند نشر إعلان ضمن الخدمات السريعة أو الظهور المميز، نجمع بيانات الإعلان (النص، الصورة، رقم التواصل) لعرضها للمستخدمين الآخرين.</li>
+        <li><strong>بيانات الاستخدام:</strong> التقييمات التي تمنحها أو تستلمها، البلاغات التي تقدّمها، وتذاكر الدعم الفني.</li>
+        <li><strong>معرّف الجهاز للإشعارات (FCM Token):</strong> لإرسال إشعارات التطبيق عند الحاجة.</li>
+      </ul>
+      <div class="note">
+        لا يخزّن التطبيق سجلّ محادثاتك مع مقدمي الخدمة. التواصل يتم مباشرة عبر مكالمة هاتفية أو واتساب خارج التطبيق، ولا نطّلع على محتوى تلك المحادثات ولا نحتفظ بها.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">3</span> كيف نستخدم بياناتك</h2>
+      <ul>
+        <li>عرض ملفك الشخصي أو ملف مقدم الخدمة للمستخدمين الآخرين ضمن نتائج البحث.</li>
+        <li>تمكينك من التواصل المباشر مع مقدمي الخدمة عبر الهاتف أو واتساب.</li>
+        <li>التحقق من هوية ومؤهلات مقدمي الخدمة (التوثيق).</li>
+        <li>معالجة التقييمات والبلاغات وتذاكر الدعم الفني.</li>
+        <li>مراجعة عمليات الدفع اليدوي (سندات التحويل) لاعتماد الاشتراكات والإعلانات المدفوعة.</li>
+        <li>مراجعة التعليقات المُبلَّغ عنها، وحذف أي محتوى مخالف، أو تقييد قدرة مستخدم على كتابة تعليقات جديدة عند مخالفة سياسة المحتوى.</li>
+        <li>إرسال إشعارات متعلقة باشتراكك أو نشاطك على المنصة (إن فعّلت هذه الميزة).</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">4</span> أين تُخزَّن بياناتك</h2>
+      <p>
+        تُخزَّن بيانات التطبيق باستخدام خدمات Firebase التابعة لشركة Google (قاعدة بيانات Firestore، خدمة المصادقة Authentication،
+        وخدمة تخزين الملفات Storage). تخضع هذه الخدمات لمعايير أمان Google العالمية، ولا يمكن الوصول إلى بياناتك الشخصية
+        إلا من خلال قواعد صلاحيات صارمة تسمح لك أنت فقط بتعديل بياناتك الخاصة.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">5</span> مشاركة البيانات مع أطراف أخرى</h2>
+      <p>لا نبيع بياناتك الشخصية لأي طرف ثالث. تظهر بيانات ملفك للمستخدمين الآخرين فقط في الحالات التالية:</p>
+      <ul>
+        <li>الاسم، الصورة الشخصية، التخصص، والخدمات — تظهر علناً لملفات مقدمي الخدمة فقط، لتمكين العملاء من التواصل معهم.</li>
+        <li>رقم الهاتف/واتساب الخاص بمقدم الخدمة — يظهر لمن يزور ملفه بهدف التواصل لطلب خدمة.</li>
+        <li>محتوى الإعلانات الترويجية (خدمات سريعة أو ظهور مميز) — يظهر علناً لكل مستخدمي التطبيق ضمن المساحات المخصصة له خلال مدة الإعلان.</li>
+        <li>نص أي تعليق تكتبه علناً على ملف طرف آخر، واسمك الظاهر معه — يظهر علناً لكل زوار ذلك الملف.</li>
+        <li>لا تُعرض بيانات العملاء (غير مقدمي الخدمة) لأي مستخدم آخر.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">6</span> المدفوعات</h2>
+      <p>
+        تتم عمليات الدفع حالياً بطريقة يدوية عبر حوالة بنكية أو محفظة إلكترونية خارج التطبيق، حيث يُدخل المستخدم
+        اسم المُحوِّل ورقم أو مرجع سند التحويل داخل التطبيق، ليقوم فريق WASIL بمراجعة العملية يدوياً واعتمادها
+        قبل تفعيل الاشتراك أو نشر الإعلان. لا يعالج التطبيق حالياً أي بيانات بطاقات ائتمان أو دفع إلكتروني مباشر،
+        ولا نطّلع على أي بيانات مصرفية حساسة أبعد من اسم المُحوِّل ورقم السند الذي يُدخله المستخدم بنفسه.
+        سيتم تحديث هذه السياسة فور تفعيل بوابة دفع إلكتروني مباشرة مستقبلاً.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">7</span> حقوقك</h2>
+      <ul>
+        <li>يمكنك تعديل بيانات ملفك الشخصي أو ملف مقدم الخدمة في أي وقت من داخل التطبيق.</li>
+        <li>يمكنك حذف حسابك نهائياً من شاشة الإعدادات، مما يؤدي لحذف بياناتك من قواعد البيانات.</li>
+        <li>يمكنك التواصل معنا في أي وقت للاستفسار عن بياناتك المخزّنة أو طلب حذفها يدوياً.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">8</span> خصوصية القُصّر</h2>
+      <p>
+        لا يُسمح باستخدام WASIL لمن هم دون سن 18 عاماً. لا نجمع عن قصد أي بيانات من قُصّر، وفي حال علمنا بذلك سنقوم
+        بحذف الحساب وبياناته فوراً.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2><span class="num">9</span> التغييرات على هذه السياسة</h2>
+      <p>
+        قد نحدّث هذه السياسة من وقت لآخر لتعكس تغييرات في خدماتنا. سيظهر تاريخ آخر تحديث أعلى هذه الصفحة، وننصحك
+        بمراجعتها بشكل دوري.
+      </p>
+    </div>
+  </div>
+
+  <div class="contact-card">
+    <h2><span class="num" style="background:white;color:var(--navy);">✉</span> تواصل معنا</h2>
+    <p style="color:rgba(255,255,255,0.8);">
+      لأي استفسار بخصوص خصوصيتك أو بياناتك، يمكنك التواصل معنا عبر:
+    </p>
+    <p><a href="mailto:support@wasil.app">support@wasil.app</a></p>
   </div>
 </main>
 
 <footer>
-  <strong>WASIL</strong> © 2026 — جميع الحقوق محفوظة | الأردن 🇯🇴
+  © 2026 WASIL. جميع الحقوق محفوظة.
 </footer>
 
 </body>
